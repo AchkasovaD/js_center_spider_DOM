@@ -11,8 +11,8 @@ function centrelize(element, place) {
   const centrePlace = [placeHeight / 2, placeWidth / 2];
   const centreElement = [elementHeight / 2, elementWidth / 2];
 
-  element.style.top = `${centrePlace[0] - centreElement[0] - 10}px`;
-  element.style.left = `${centrePlace[1] - centreElement[1] - 10}px`;
+  element.style.top = `${centrePlace[0] - centreElement[0]}px`;
+  element.style.left = `${centrePlace[1] - centreElement[1]}px`;
 }
 
 centrelize(spider, wall);
