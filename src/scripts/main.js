@@ -4,8 +4,8 @@ const spider = document.querySelector('img.spider');
 const wall = document.querySelector('div.wall');
 
 function centrelize(element, place) {
-  const placeWidth = place.getBoundingClientRect().width;
-  const placeHeight = place.getBoundingClientRect().height;
+  const placeWidth = place.clientWidth;
+  const placeHeight = place.clientHeight;
   const elementWidth = element.getBoundingClientRect().width;
   const elementHeight = element.getBoundingClientRect().height;
   const centrePlace = [placeHeight / 2, placeWidth / 2];
